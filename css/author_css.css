@@ -1,0 +1,42 @@
+.td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    }
+    
+    .prizestitle {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: #6666ff;
+    font-size: 30px;
+    font-weight: 200;
+    
+    }
+    
+    .prizesinfo {
+        font-size: 25px;
+    
+    }
+    
+    .prizesdesc {
+        font-size: 18px;
+    
+    }
+    
+    .shell {
+        border: 1px solid gray;
+        border-collapse: collapse;
+        width: calc(50% - 40px);
+        margin: 10px;
+        display: inline-block;
+        float: left;
+    } 
+    #exp{
+       
+        height: 80px;
+        width: 80px;
+        align-items: left;
+        float: left; 
+        margin: 0px 15px 15px 0px;
+    }
