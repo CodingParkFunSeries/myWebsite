@@ -2,205 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>My website</title>
-        <style>
-            footer{
-                background-color: #bfbfbf;
-            }
-            .social{
-                height: 30px;
-                width: 40px;
-            }
-            .author{
-                height: 40px;
-                width: 45px;
-                align-items: center;
-                border-radius: 35%;
-                margin-top: 20px;
-            }
-            #contact{
-                height: 25px;
-                widows: 25px;
-            }
-            .site-footer
-{
-  background-color:#26272b;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
-}
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
-}
-.site-footer hr.small
-{
-  margin:20px 0
-}
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:#737373;
-}
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
-}
-.copyright-text
-{
-  margin:0
-}
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-}
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
-}
-#author_img{
-    width: 200px;
-    height: 200px;
-    margin-left: 650px;
-    margin-bottom: 100px;
-    position: absolute;
-    border-radius: 20px;
-    box-shadow:         2px 2px 3px 3px #ccc;
-}
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
-}
-.social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
-}
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
-}
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
-}
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
-}
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
-}
-.social-icons a.linkedin:hover
-{
-  background-color:#007bb6
-}
-.social-icons a.dribbble:hover
-{
-  background-color:#ea4c89
-}
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
-            
-            
-        </style>
+        <title>About Me!</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="allCSS.css">
+        <link rel="stylesheet" href="css/author_css.css">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body >
+      
         
         <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light">
             
@@ -211,9 +22,7 @@
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
+                
                 <li class="nav-item active">
                   <a class="nav-link" href="blog.html">Blogs<span class="sr-only">(current)</span></a>
                 </li>
@@ -230,40 +39,111 @@
           </nav>
         </br>
     </br>
+    
     <div class="container ">
-        <div class="jumbotron">
+      
+        <div class="jumbotron" id="float" style="background: linear-gradient(to right, #6c6d6d -100%, #ffffff 45%);">
+          
+          <img src="My Post.png" alt="" id="coverPic">
             
-            <h1 class="display-4">About me !<img src="author.jpg" alt="" id="author_img"></h1>
-            
-            <p class="lead">
-                <ul>
-                    <li><h3>Name: Gunjan Paul</h3></li>
-                    <li><h3>Contact</h3>
-                        <ul>
-                            <li><img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-42-151143.png" alt="" id="contact"> <a href="https://www.linkedin.com/in/gunjan-paul-8a2806152/">Gunjan Paul</a></li>
-                            <li><img src="https://png.pngtree.com/svg/20170419/dc4130d38b.png" alt="" id="contact"> <a href="">gunjan.mtbpaul@gmail.com</a></li>
-                            <li><img src="https://images.vexels.com/media/users/3/141329/isolated/preview/35dc0093417a545e8812c98fd31a98df-telephone-round-icon-1-by-vexels.png" alt="" id="contact"> <a href="">6295657810</a></li>
-                        </ul>
-                    </li>
-                </br>
-                    <li><h3>Address</h3></p><p>Gurukul, Sikar Road Near Udaipuria Mod, Jaipur, Rajasthan 303807</p></li>
-
-                </ul>
-            </p>
-          </div>
-          <div class="jumbotron">
-            <h1 class="display-4">Education</h1>
-            <p class="lead">
-                <ul>
-
+            <img src="author.jpg" alt="" id="author_img">
+            <h1 style="font-size: 65px;font-family: 'Permanent Marker', cursive; bottom: 14px;">GUNJAN <span style="color: red;">PAUL</span></h1>
+          
+              <div>
+                <h2 style="font-family: 'Permanent Marker', cursive;">Contact</h2>
+                <a href="https://www.linkedin.com/in/gunjan-paul-8a2806152/"><img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-42-151143.png" alt="" id="contact"></a>
+                <a href="gunjan.mtbpaul@gmail.com"><img src="https://png.pngtree.com/svg/20170419/dc4130d38b.png" alt="" id="contact"></a>
+                <a href="6295657810"><img src="https://images.vexels.com/media/users/3/141329/isolated/preview/35dc0093417a545e8812c98fd31a98df-telephone-round-icon-1-by-vexels.png" alt="" id="contact"></a>
+              </div>
+            </br>
+              <div>
+                <h2 style="font-family: 'Permanent Marker', cursive;">Other Details</h2>
+                <img src="http://www.iconarchive.com/download/i89171/icons8/ios7/Users-Student.ico" alt="" onclick="changeImage()" id="show" style="width: 60px;height:60px; margin-bottom:-12px;">
+                <img src="https://i.ya-webdesign.com/images/working-vector-work-experience-1.png" alt="" onclick="changeImage1()" id="show1" style="width: 45px;height:45px;">
+                <img src="https://static.thenounproject.com/png/532095-200.png" alt="" onclick="changeImage2()" id="show2" style="width: 45px;height:45px;">
+                <div class="menu" style="display: none;">
+                  <p class="lead">
+                    <div>
+                      
+                      <img src="img/uem.png" alt="" id="exp">
+                      <h2>University: University of Engineering and Management, Jaipur</h2>
+                      <p>Bachelor of Technology - BTech, Computer Science and Engineering</p>
+                      <p>2018-2022</p>
+                      
+                    </div>
+                    <div>
+                      
+                      <img src="https://scontent-bom1-2.xx.fbcdn.net/v/t1.0-9/45590069_2060605237325410_6754596642948644864_n.jpg?_nc_cat=108&_nc_ohc=hl1LBRHjplkAX-yOeAJ&_nc_ht=scontent-bom1-2.xx&oh=487c844cdfc9211f0f0f45f7adc4c699&oe=5EA1F4FA" alt="" style="border-radius: 50%;" id="exp">
+                      <h2>Mathabhanga High School</h2>
+                      <p>Higher Secondary, Science</p>
+                      <p>2016-2018</p>
+                      
+                    </div>
+                    <div>
+                      
+                      <img src="https://scontent-bom1-2.xx.fbcdn.net/v/t1.0-9/45590069_2060605237325410_6754596642948644864_n.jpg?_nc_cat=108&_nc_ohc=hl1LBRHjplkAX-yOeAJ&_nc_ht=scontent-bom1-2.xx&oh=487c844cdfc9211f0f0f45f7adc4c699&oe=5EA1F4FA" style="border-radius: 50%;"  alt="" id="exp">
+                      <h2>Mathabhanga High School</h2>
+                      <p>Higher Secondary, Science</p>
+                      <p>2016-2018</p>
+                      
+                    </div>
+                    <div>
+                      
+                      <img src="img/sarada.png" alt="" id="exp">
+                      <h2>Sarada SishuTirtha Mathabhanga</h2>
+                      <p>Upto 4th</p>
+                      <p>2005-2010</p>
+                      
+                    </div>
+                      
+                  </p>
+                  </div>
+                  <!--------------exprience--------------->
+                  <div class="menu1" style="display: none;">
+                  </br>
+                  <p class="lead">
+                    <div>
+                      
+                      <img src="http://smdp.32mosfets.com/wp-content/uploads/2019/05/nitdlogo1.png" alt="" id="exp">
+                      <h2>Formal Research Intern</h2>
+                      <p>National Institute of Technology Durgapur </p>
+                      <p>19 Dec,2019- 20 Jan,2022</p>
+                      
+                    </div>
+                    <div>
+                      
+                      <img src="https://i.pinimg.com/originals/39/21/6d/39216d73519bca962bd4a01f3e8f4a4b.png" alt="" style="border-radius: 50%;" id="exp">
+                      <h2>Google Assistant Action Developer</h2>
+                      <p>Google</p>
+                      <p>Jul,19-present</p>
+                      
+                    </div>
+                    <div>
+                      
+                      <img src="https://www.gssoc.tech/images/gslogo.png" style="border-radius: 50%;"  alt="" id="exp">
+                      <h2>Campus Ambassador</h2>
+                      <p>Girlscript Foundation</p>
+                      <p>Jan,20-present</p>
+                      
+                    </div>
                     
-                    <li><h3>University: University of Engineering and Management, Jaipur(2018-2022)</h3></li>
-                    <li><h3>School: Mathabhanga High School(2010-2018)</h3></li>
-                    <li><h3>School: Sarada Sisutirha, Mathabhanga(2005-2010)</h3></li>
+                      
+                  </p>
+                  
                     
-                </ul>
-            </p>
+                    
+                  </div>
+                  <!-------------------skill------------>
+                  <div class="menu2" style="display: none;">
+                    <img src="img/output.png" alt="" style="margin-left:300px;">
+                    
+                  </div>
+                  
+                  
+              </div>
           </div>
+          
+          
 
     </div>
        
@@ -326,5 +206,58 @@
         </div>
       </div>
 </footer>
+<!-------------------------dropdrown function-------------------------->
+<script>
+  $(document).ready(function(){
+    $('#show').click(function() {
+      $('.menu').toggle("slide");
+    });
+});
+function changeImage() {
+  var image = document.getElementById('show');
+  if (image.src.match("http://www.iconarchive.com/download/i89171/icons8/ios7/Users-Student.ico")) {
+      image.src = "img/cross1.png";
+  }
+  else {
+      image.src = "http://www.iconarchive.com/download/i89171/icons8/ios7/Users-Student.ico";
+  }
+}
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('#show1').click(function() {
+        $('.menu1').toggle("slide");
+      });
+  });
+  function changeImage1() {
+    var image = document.getElementById('show1');
+    if (image.src.match("https://i.ya-webdesign.com/images/working-vector-work-experience-1.png")) {
+        image.src = "img/cross1.png";
+    }
+    else {
+        image.src = "https://i.ya-webdesign.com/images/working-vector-work-experience-1.png";
+    }
+  }
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('#show2').click(function() {
+          $('.menu2').toggle("slide");
+        });
+    });
+    function changeImage2() {
+      var image = document.getElementById('show2');
+      if (image.src.match("https://static.thenounproject.com/png/532095-200.png")) {
+          image.src = "img/cross1.png";
+      }
+      else {
+          image.src = "https://static.thenounproject.com/png/532095-200.png";
+      }
+    }
+
+      </script>
+      
+
+  
     </body>
 </html>
