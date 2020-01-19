@@ -16,13 +16,178 @@
                 width: 45px;
                 align-items: center;
                 border-radius: 35%;
-
-
+                margin-top: 20px;
             }
+            .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+            
+            
         </style>
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
-    <body>
+    <body >
         
         <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light">
             
@@ -62,15 +227,16 @@
           </nav>
         </br>
     </br>
-       
+    <div >
+      <img src="My Post.png" alt="" style="position: relative; height:700px; width: 1500px; display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 1%;">
+    </div>
+  </br>
+</br>
     <div class="container">
-            <div class="jumbotron">
-                <h1 class="display-4">Welcome to COMMAND LINE !</h1>
-                <p class="lead">A platform to explore more about opensource and gdrive into it.</p>
-                <hr class="my-4">
-               
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-              </div>
+            
               <div class="jumbotron">
                 <h1 class="display-4">What is a open source project ?</h1>
                 <p class="lead">As this question wasn't tagged "Programming," I'll assume you have no knowledge of computer programming, either.  Computer programs are created by writing source code in a very rigorous format akin to natural languages (except, as I said, more rigorous).  The source code can be interpreted by a special computer program and turned into a format the computer's processor can understand naturally (called a binary or executable).
@@ -85,80 +251,63 @@
                 
               </div>
         </div>
-        <footer class="page-footer font-small blue pt-4">
+          <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Basic programming has become an essential skill for grown-ups and opensource is platform to show your skills !</p>
+          </div>
 
-            <!-- Footer Links -->
-            <div class="container-fluid text-center text-md-left">
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="#">Open source</a></li>
+              <li><a href="#">Linux & Mac</a></li>
+              <li><a href="#">App Development</a></li>
+              <li><a href="#">Coding</a></li>
+              <li><a href="#">DevOps</a></li>
+              <li><a href="#">Web Development</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Partners</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="#!"><img src="https://seeklogo.com/images/M/microsoft-azure-logo-85055C44BE-seeklogo.com.png" alt="" class="social"></a>
+                <a href="#!"><img src="https://seeklogo.com/images/G/google-cloud-logo-ADE788217F-seeklogo.com.png" alt="" class="social"></a>
+                <a href="#!"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="" class="social"></a>
+              </li>
+            </ul>
+            <h6>Scoial Handels</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="https://github.com/gunjanmimo"><img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="" class="social"></a>
+                <a href="https://www.youtube.com/channel/UC-eS2uQSIheCDgo94unkCMw?view_as=subscriber"><img src="https://cdn.iconscout.com/icon/free/png-256/youtube-279-838365.png" alt="" class="social"></a>
+                <a href="https://www.instagram.com/gunjan_mimo/"><img src="https://www.pinclipart.com/picdir/big/119-1198369_instagram-2016-logo-svg-vector-amp-png-transparent.png" alt="" class="social"></a>
+                <a href="https://twitter.com/GunjanPaul2"><img src="https://seeklogo.com/images/T/twitter-logo-A84FE9258E-seeklogo.com.png" alt="" class="social"></a>
+                <a href="https://www.linkedin.com/in/gunjan-paul-8a2806152/"><img src="https://images.vexels.com/media/users/3/137382/isolated/preview/c59b2807ea44f0d70f41ca73c61d281d-linkedin-icon-logo-by-vexels.png" alt="" class="social"></a>
+              </li>
+            </ul>
+          </div>
+         
           
-              <!-- Grid row -->
-              <div class="row">
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="index.html">Command Line</a>.
+            </p>
+          </div>
+
           
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-          
-                  <!-- Content -->
-                  <h5 class="text-uppercase">Command Line/h5>
-                  <p>A platform to explore more about opensource and gdrive into it.</p>
-          
-                </div>
-                <!-- Grid column -->
-          
-                <hr class="clearfix w-100 d-md-none pb-3">
-          
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-          
-                  <!-- Links -->
-                  <h5 class="text-uppercase">Connect</h5>
-          
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="https://github.com/gunjanmimo"><img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="" class="social"></a>
-                    </li>
-                </br>
-                    <li>
-                      <a href="https://www.youtube.com/channel/UC-eS2uQSIheCDgo94unkCMw?view_as=subscriber"><img src="https://cdn.iconscout.com/icon/free/png-256/youtube-279-838365.png" alt="" class="social"></a>
-                    </li>
-                </br>
-                    <li>
-                      <a href="https://www.facebook.com/gunjan.paul.372"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="" class="social"></a>
-                    </li>
-                </br>
-                    <li>
-                      <a href="https://www.instagram.com/gunjan_mimo/"><img src="https://www.pinclipart.com/picdir/big/119-1198369_instagram-2016-logo-svg-vector-amp-png-transparent.png" alt="" class="social"></a>
-                    </li>
-                  </ul>
-          
-                </div>
-                <!-- Grid column -->
-          
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-          
-                  <!-- Links -->
-                  <h5 class="text-uppercase">Partners</h5>
-          
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="#!"><img src="https://seeklogo.com/images/M/microsoft-azure-logo-85055C44BE-seeklogo.com.png" alt="" class="social"></a>
-                    </li>
-                  </ul>
-          
-                </div>
-                <!-- Grid column -->
-          
-              </div>
-              <!-- Grid row -->
-          
-            </div>
-            <!-- Footer Links -->
-          
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-              <a href="index.html"> Comand Line</a>
-            </div>
-            <!-- Copyright -->
-          
-          </footer>
+        </div>
+      </div>
+</footer>
     </body>
 </html>
